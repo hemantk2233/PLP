@@ -1,0 +1,22 @@
+
+Feature: Merchant Home Page
+
+  Scenario: Add product
+    Given Merchant is on his page 
+    When merchant enters id, type, price, quantity and discountPrice of product 
+    Then  Product details get stored in database
+    
+Scenario: Order Request
+    Given Merchant is on his page
+    When click on order request button
+    Then  merchant can see order request and accept orders
+
+ Scenario: Remove product
+    Given Merchant is on his page
+    When the order request is accepted 
+    Then merchant can update the quantity of product
+    
+    Scenario: Promo codes
+    Given Merchant is on his page
+    When Click on promo code button
+    Then Promo code will generate randomly and stored in database 

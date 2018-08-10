@@ -1,0 +1,36 @@
+Feature: Customer Page
+
+  Scenario: Profile
+    Given Customer is on his page 
+    When click on profile button
+    Then  customer can edit and update his profile
+    
+    Scenario: Order items
+    Given Customer is on his page 
+    When click on order item button
+    Then  customer can check ordered items and return ordered items
+    
+    Scenario: cart
+    Given Customer is on his page 
+    When click on cart button
+    Then  customer can add products
+    
+    Scenario: wishlist
+    Given Customer is on his page 
+    When click on wislist button
+    Then  customer raise request for the product when available
+    
+    Scenario: Feedback
+    Given Customer is on his page 
+    When click on feedback link
+    Then  customer can give feedback for product and merchant
+    
+    Scenario: Track order
+    Given Customer is on his page 
+    When click track order button
+    Then  customer can track the status of the product
+    
+    Scenario: customer care
+    Given Customer is on his page 
+    When click on customer care contact button
+    Then  customer can place a query

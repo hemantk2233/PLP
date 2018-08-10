@@ -1,0 +1,6 @@
+Feature: Password Encryption
+
+  Scenario: Password encryption
+    Given Password
+    When user enter password at the time of signup 
+    Then  password is encrypted and stored in database
